@@ -1,0 +1,68 @@
+{
+    "Commander Requier lines": {
+        "prefix": "snippetCommandRequirer",
+        "body": [
+            "var command = require('commander')",
+            "var prompt = require('prompt')",
+            "var colors = require('colors')",
+            "$0"
+        ],
+        "description": "Sets up the require statements that are needed for CLI's."
+    },
+    "Commander Command Creator": {
+        "prefix": "snippetCommandVersion",
+        "body": [
+            "program",
+            "   .version('${1:0.0.1}')",
+            "   .option('${2:-i}, ${3:--info}', '${4:description}')"
+            "   $0"
+        ],
+        "description": "This setups the version for the CLI in commander."
+    },
+    "Commander action line creator": {
+        "prefix": "snippetCommandCommand",
+        "body": [
+            "program",
+            "  .command(\"${1:command} ${2:named_value}\")",
+            "  .description('${3:description}')",
+            "  .action(function(${2}, options) {",
+            "     console.log(colors.red,\"message\")",
+            "     $0",
+            "})"
+        ],
+        "description": "This creates an actual function for a given CLI command."
+    },
+    "Option line for Commander": {
+        "prefix": "snippetCommandOption",
+        "body": [
+            ".option('${1:-i}, ${2:--info}', '${3:description}')",
+            "$0"
+        ],
+        "description": "This creates an option."
+    },
+    "Custom help for Commander": {
+        "prefix": "snippetCommandOption",
+        "body": [
+            "program.on('--help', function(){",
+            "$0",
+            "})"
+        ],
+        "description": "This creates the custom help function for commander.js."
+    },
+    "Custom error for Commander": {
+        "prefix": "snippetCommandOption",
+        "body": [
+            "program.on('error', function(err, command){",
+            "console.log('')",
+            "console.log(colors.red('  Error:', err.message))",
+            "command.outputUsage()",
+            "command.outputCommands()",
+            "command.outputOptions()",
+            "console.log()",
+            "process.exit(1)",
+            "$0",
+            "})"
+        ],
+        "description": "This creates the custom error function for commander.js."
+    }
+}
