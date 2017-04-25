@@ -9,13 +9,15 @@
         ],
         "description": "Sets up the require statements that are needed for CLI's."
     },
-    "Commander Command Creator": {
+    "Commander version creator": {
         "prefix": "snippetCommanderVersion",
         "body": [
             "program",
             "   .version('${1:0.0.1}')",
-            "   .option('${2:-i}, ${3:--info}', '${4:description}')"
-            "   $0"
+            "   .option('${2:-i}, ${3:--info}', '${4:description}')",
+            "   $0",
+            "",
+            "program.parse(process.argv)"
         ],
         "description": "This setups the version for the CLI in commander."
     },

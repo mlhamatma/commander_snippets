@@ -1,9 +1,9 @@
 {
     "name": "vscode-javascript-commander-snippet",
-    "publisher": "mlhamatma",
+    "publisher": "alphawolfconsulting",
     "displayName": "JavaScript Commander Snippet",
     "description": "A snippet pack to make you more productive working with Commander.js for node.js",
-    "icon": "art/js-icon.png",
+    "icon": "images/Alphawolf_Logo.jpeg",
     "galleryBanner": {
         "color": "#F0DB4F",
         "theme": "dark"
