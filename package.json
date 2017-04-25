@@ -1,9 +1,9 @@
 {
     "name": "vscode-javascript-commander-snippet",
-    "publisher": "mlhamatma",
+    "publisher": "alphawolfconsulting",
     "displayName": "JavaScript Commander Snippet",
     "description": "A snippet pack to make you more productive working with Commander.js for node.js",
-    "icon": "art/js-icon.png",
+    "icon": "images/Alphawolf_Logo.jpeg",
     "galleryBanner": {
         "color": "#F0DB4F",
         "theme": "dark"
@@ -17,15 +17,20 @@
         "type": "git",
         "url": "https://github.com/mlhamatma/commander_snippets/blob/master/README.md"
     },
-    "version": "0.0.1",
-    "engines": { "vscode": "^0.11.x" },
-    "categories": ["Snippets"],
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^0.11.x"
+    },
+    "categories": [
+        "Snippets"
+    ],
     "keywords": [
         "Javascript",
         "Typescript"
     ],
     "contributes": {
-        "snippets": [{
+        "snippets": [
+            {
                 "language": "javascript",
                 "path": "./snippets/javascript.json"
             },

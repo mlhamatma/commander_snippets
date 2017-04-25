@@ -19,7 +19,7 @@ This snippet will create the three require for:
 *  colors
 
 ```
-var command = require('commander')
+var program = require('commander')
 var prompt = require('prompt')
 var colors = require('colors')
 ```
