@@ -6,7 +6,26 @@ In order to use commander.js you create a "program" that excepts commandline arg
 
 ## Religion
 
-I don't like to use ; and I like to use 4 spaces for indent.
+I don't like to use ; and I like to use 3 spaces for indent.
+
+# Installation
+1. Visit [VSCode Market: Custom Snippets][marketplace-url].<br><br>**OR**
+
+2. By VSCode
+   * Open VSCode
+   * Launch VS Code Quick Open (press **Ctrl+P**) 
+   * Paste the following command
+
+     ```
+     ext install vscode-javascript-commander-snippet
+     ```
+   * Press **Enter** to search the extension
+   * Select **JavaScript Commander Snippet** 
+   * Click **Install**
+
+## Usage
+
+Type snippet prefix, and IntelliSense will show the snippet. If IntelliSense doesn't show the snippet, press **Ctrl+Space** and then **Enter** to insert the snippet.
 
 # The Snippets
 
@@ -24,6 +43,10 @@ var prompt = require('prompt')
 var colors = require('colors')
 ```
 
+Number of Tabstops: 0
+
+![Custom Snippets: Single-line](images/CommanderRequirer.gif "Create Custom or User snippet with single line body")
+
 Why these? Well in almost all cases I use commander.js to create commandline tools, as such, I like to use prompt to get info, from the user if they haven't given me the expected valid input ... so I almost always use it. Also, it is easy to delete prompt and colors :)
 
 ## snippetCommanderVersion
@@ -35,6 +58,10 @@ program
    .option('-i, --info', 'description')
 ```
 
+Number of Tabstops: 4
+
+![Custom Snippets: Single-line](images/CommanderVersion.gif "Create commander version snippet")
+
 ## snippetCommanderAction
 This will create the commander.js action
 ```
@@ -45,6 +72,8 @@ program
      console.log(colors.red,"message")
 })
 ```
+
+Number of Tabstops: 3
 
 ## snippetCommanderError
 This will create the custom error function for your command.
@@ -61,6 +90,8 @@ program.on('error', function(err, command){
 ```
 I gave this one as a simple example one cause I hate trying to remember all the Usage, Commands, and Options values. Again, as before I just delete it when I don't want it.
 
+Number of Tabstops: 0
+
 ## snippetCommanderHelp
 This will create the custom help function for your command.
 ```
@@ -69,8 +100,14 @@ program.on('--help', function(){
 })
 ```
 
+Number of Tabstops: 0
+
 ## snippetCommanderOption
 This will create just the one option value for your command.
 ```
 .option('-i, --info', 'description')
 ```
+
+Number of Tabstops: 3
+
+![Custom Snippets: Single-line](images/CommanderOption.gif "Create custom command option snippet. There are three tabstops.")
