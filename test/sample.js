@@ -10,7 +10,7 @@ program
 program
   .command("test [save]")
   .description('The description to test the command with.')
-  .option('-i, --info [state]', 'The info description for option -i')
+  .option('-i, --info [state]', 'The info description for option -i','ma')
   .option('-f, --flag', 'This is a flag. If set then the info will get printed out.')
   .action(function (save, options) {
     save = save || 'memory'
@@ -50,3 +50,4 @@ program.on('error', function (err, command) {
 })
 
 program.parse(process.argv)
+

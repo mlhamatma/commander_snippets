@@ -37,7 +37,7 @@
     "Option line for Commander": {
         "prefix": "snippetCommanderOption",
         "body": [
-            ".option('${1:-i}, ${2:--info}', '${3:description}')",
+            ".option('${1:-i}, ${2:--info}', '${3:description}','${4:coersion_function}','${5:default}')",
             "$0"
         ],
         "description": "This creates an option."
