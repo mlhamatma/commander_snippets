@@ -17,7 +17,7 @@
         "type": "git",
         "url": "https://github.com/mlhamatma/commander_snippets/blob/master/README.md"
     },
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^0.11.x"
     },
@@ -32,11 +32,11 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/javascript.json"
+                "path": "./snippets/javascriptreact.json"
             },
             {
                 "language": "javascriptreact",
-                "path": "./snippets/javascript.json"
+                "path": "./snippets/javascriptreact.json"
             }
         ]
     }
